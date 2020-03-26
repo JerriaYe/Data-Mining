@@ -1,7 +1,7 @@
 
 #零基础入门数据挖掘 -二手车交易价格预测
 
-2020.3.10-4.11天池与开源AI学习组织Datawhale合作举办的数据竞赛，详情见：https://tianchi.aliyun.com/competition/entrance/231784/information
+2020.3.10-4.11天池与开源AI学习组织Datawhale合作举办的数据竞赛，详情见（包含赛题说明与数据下载）：https://tianchi.aliyun.com/competition/entrance/231784/information
 
 主要分为赛题理解，数据探索，特征工程，建模调参与模型融合这五部分。
 
