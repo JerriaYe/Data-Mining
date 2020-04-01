@@ -73,15 +73,8 @@
    ### 4.3 多种模型对比
    4.3.1 线性模型与嵌入式模型：分别利用LinearRegression， Ridge与Lasso模型对数据train_X, train_y_ln进行交叉验证拟合，分析对比效果。其中Lasso模型可以看出哪些模型对标签的影响较大等情况，而利用了L2正则的Ridge则抗干扰能力强。
    
-   4.3.2非线性模型：利用线性模型，决策树，随机森林，梯度提升回归，多层感知机，XGB以及LGB等等模型对数据X=train_X, y=train_y_ln进行拟合，对比效果。
-          LinearRegression(),
-          DecisionTreeRegressor(),
-          RandomForestRegressor(),
-          GradientBoostingRegressor(),
-          MLPRegressor(solver='lbfgs', max_iter=100), #bfgs是有限limited拟牛顿法里面的，是模型的求目标函数的学习算法
-          XGBRegressor(n_estimators = 100, objective='reg:squarederror'), 
-          LGBMRegressor(n_estimators = 100)]
-          
+   4.3.2非线性模型：利用线性模型，决策树，随机森林，梯度提升回归，多层感知机，XGB以及LGB等等模型对数据X=train_X, y=train_y_ln进行拟合，对比效果。 LinearRegression()，DecisionTreeRegressor(),GradientBoostingRegressor(),MLPRegressor(),XGBRegressor(),LGBMRegressor().
+   .
     4.3.3 模型调参：可以通过贪心调参(局部最优解可以是全局最优解），Grid Search 网格搜索调参（指定参数的搜索范围，自动调整参数达到最好的模型效果）以及贝叶斯调参来实现参数调整（与随机或网格搜索相比，贝叶斯优化对目标函数的评估较少，测试集上的更好的泛化性能）。
     
    
