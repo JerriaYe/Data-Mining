@@ -81,6 +81,7 @@
           MLPRegressor(solver='lbfgs', max_iter=100), #bfgs是有限limited拟牛顿法里面的，是模型的求目标函数的学习算法
           XGBRegressor(n_estimators = 100, objective='reg:squarederror'), 
           LGBMRegressor(n_estimators = 100)]
+          
     4.3.3 模型调参：可以通过贪心调参(局部最优解可以是全局最优解），Grid Search 网格搜索调参（指定参数的搜索范围，自动调整参数达到最好的模型效果）以及贝叶斯调参来实现参数调整（与随机或网格搜索相比，贝叶斯优化对目标函数的评估较少，测试集上的更好的泛化性能）。
     
    
